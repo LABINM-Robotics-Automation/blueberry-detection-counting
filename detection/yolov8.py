@@ -19,6 +19,9 @@ class Yolo8:
 
         if num_bboxes < 1: return img
         
-        img = results[0].plot(conf=False, masks=False, labels=True, font_size = 0.1)
+        img = results[0].plot(conf=False, 
+                              masks=False, 
+                              labels=True, 
+                              font_size = 0.1)
 
         return img
