@@ -122,7 +122,8 @@ def save_metrics(
     collection_name : str,
     run_params : dict, 
     metrics : dict,
-    model
+    model,
+    model_type
 ):
 
     experiment_id = datetime.now().strftime('%Y_%m_%d__%H_%M_%S') 
@@ -219,7 +220,8 @@ def main(
             collection_name=collection_name,
             run_params=run_params,
             metrics=metrics,
-            model=model
+            model=model,
+            model_type=model_type
         )
 
     except Exception as e:
