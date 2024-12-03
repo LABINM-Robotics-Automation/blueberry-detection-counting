@@ -300,7 +300,6 @@ def add_metrics(
     firebase_credentials_json_path : str,
     collection_name : str,
     model_type : str,
-    folder_path : str,
     imgsz : int,
     epochs : int
 ):
@@ -313,7 +312,7 @@ def add_metrics(
 
         model = YOLO(model_type)
         model.train(
-            data=os.path.join(folder_path, "data.yaml"),
+            data=os.path.join(os.getcwd(),'data','blueberryOD_640x640_669imgs', "data.yaml"),
             epochs=epochs,
             imgsz=imgsz,
             project="blueberry-detection",
