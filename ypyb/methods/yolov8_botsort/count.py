@@ -2,6 +2,7 @@ from .classes import *
 import cv2
 import time
 import torch
+import sys
 
 def crop_image(image):
     # Get dimensions
@@ -80,7 +81,9 @@ def count_on_video(
             break
 
     cap.release()
-    cv2.destroyAllWindows()
+
+    if not 'google.colab' in sys.modules:
+        cv2.destroyAllWindows()
 
     return blueberry_counter.get_number_counted()['counted']
 
