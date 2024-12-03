@@ -1,4 +1,4 @@
-from classes import *  
+from .classes import *  
 import cv2
 import time
 import torch
