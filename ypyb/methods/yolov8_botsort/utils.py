@@ -169,7 +169,7 @@ def compute_mean_error(
 
         video_path = video.get('video_path')
 
-        estim_num_blueb = count_on_video(video_path, weights_path, conf_threshold, show_video=True)
+        estim_num_blueb = count_on_video(video_path, weights_path, conf_threshold)
 
         corr_num_blueb = video.get('number')
 
