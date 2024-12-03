@@ -6,7 +6,7 @@ import firebase_admin
 from firebase_admin import credentials, firestore
 from datetime import datetime
 from google.cloud import storage
-from count import *
+from .count import *
 import numpy as np
 
 
