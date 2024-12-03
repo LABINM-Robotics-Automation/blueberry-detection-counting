@@ -306,11 +306,8 @@ def add_metrics(
 ):
     try:
 
-        if not os.path.exists(folder_path):
-            download_dataset()
-            download_videos()
-        else:
-            print(f"Folder '{folder_path}' already exists. No need to download.")
+        download_dataset(os.path.join(os.getcwd(),'data'))
+        download_videos(os.path.join(os.getcwd(),'videos'))
 
         experiment_id = datetime.now().strftime('%Y_%m_%d__%H_%M_%S')  
 
