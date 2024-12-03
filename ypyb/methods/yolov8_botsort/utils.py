@@ -151,7 +151,7 @@ def get_number_blueberries(
     number_blueberries = count_on_video(video_path, 
                                         weights_path,
                                         conf_threshold,
-                                        show_video=True)
+                                        show_video=False)
     return number_blueberries
 
 
