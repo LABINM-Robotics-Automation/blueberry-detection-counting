@@ -65,7 +65,6 @@ def get_run_parameters(trainer):
         'dfl' : trainer.dfl,
         'pose' : trainer.pose,
         'kobj' : trainer.kobj,
-        'label_smoothing' : trainer.label_smoothing,
         'nbs' : trainer.nbs,
         'hsv_h' : trainer.hsv_h,
         'hsv_s' : trainer.hsv_s,
