@@ -10,7 +10,7 @@ class Yolo8:
         self.model = YOLO(self.weights, verbose=False)
         self.letterbox = LetterBox()
 
-    def predict(self, img, conf_thres=0.5):
+    def detect(self, img, conf_thres=0.5):
         results = self.model(img, conf=conf_thres)
         return results 
 
