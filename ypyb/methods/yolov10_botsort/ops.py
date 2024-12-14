@@ -1,6 +1,3 @@
-import classes as c
-import functions as f
-
 def detect_on_image(
     input_image,
     conf_threshold,
@@ -14,7 +11,8 @@ def detect_on_image(
         input_image    : input image loaded with opencv
         conf_threshold : float between 0 and 1
         model          : object detection model that will be used to detect
-    ''' 
+    '''
+
     # Here goes your code, good luck !!!
     image_with_objects_detected = None
 
