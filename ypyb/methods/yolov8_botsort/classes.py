@@ -1,5 +1,4 @@
 from ultralytics import YOLO
-from ultralytics.data.augment import LetterBox
 import cv2
 import torch
 
@@ -8,7 +7,6 @@ class Yolo8:
         self.weights = weights
         self.device = device
         self.model = YOLO(self.weights, verbose=False)
-        self.letterbox = LetterBox()
 
     def detect(self, img, conf_thres=0.5):
         results = self.model(img, conf=conf_thres)
