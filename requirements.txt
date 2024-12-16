@@ -1,4 +1,4 @@
-ultralytics==8.0.20  
+ultralytics==8.3.31  
 opencv-python==4.8.0.74  
 torch==2.0.1  
 firebase-admin==6.1.0  
