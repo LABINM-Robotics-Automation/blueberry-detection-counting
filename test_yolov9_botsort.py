@@ -15,4 +15,4 @@ while True:
     key = cv2.waitKey(0)
     if key == ord('q'):
         cv2.destroyAllWindows()
-
+        exit()
