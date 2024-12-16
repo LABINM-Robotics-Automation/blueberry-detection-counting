@@ -6,7 +6,7 @@ class Yolo8:
     def __init__(self, weights, device):
         self.weights = weights
         self.device = device
-        self.model = YOLO(self.weights, verbose=False)
+        self.model = YOLO(self.weights)
 
     def detect(self, img, conf_thres=0.5):
         results = self.model(img, conf=conf_thres)
